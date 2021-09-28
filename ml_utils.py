@@ -4,6 +4,7 @@ from sklearn.naive_bayes import GaussianNB
 from sklearn.metrics import accuracy_score
 
 # define a Gaussain NB classifier
+#
 clf = GaussianNB()
 
 # define the class encodings and reverse encodings
@@ -11,6 +12,8 @@ classes = {0: "Iris Setosa", 1: "Iris Versicolour", 2: "Iris Virginica"}
 r_classes = {y: x for x, y in classes.items()}
 
 # function to train and load the model during startup
+
+
 def load_model():
     # load the dataset from the official sklearn datasets
     X, y = datasets.load_iris(return_X_y=True)
